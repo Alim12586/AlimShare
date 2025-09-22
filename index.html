@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>AlimShare</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login-section">
+    <input type="email" id="email" placeholder="E-posta">
+    <input type="password" id="password" placeholder="Şifre">
+    <button onclick="handleLogin()">Giriş Yap</button>
+    <button onclick="handleGoogleLogin()">Google ile Giriş</button>
+  </div>
+
+  <div id="upload-section" style="display:none;">
+    <input type="file" id="fileInput">
+    <input type="text" id="commitMessage" placeholder="Commit mesajı">
+    <button onclick="handleUpload()">Yükle</button>
+    <div id="fileList"></div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
